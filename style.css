@@ -1,83 +1,112 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: cursive;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' , sans-serif;
+  box-sizing: border-box;
 }
-body{
-    background-color: cadetblue;
-}
-.container{
-    background-color: #e0dddd;
-    max-width: 600px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
-    margin: 20px auto;
-    margin-top: 40px;
-    border-radius: 5px;
-}
-form{
-    display: flex;
-    justify-content: space-between;
-    margin: 30px;
-    align-items: center;
-}
-form input[type="text"]{
-    padding: 10px;
-    font-size: 18px;
-    width: 70%;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-}
-form input[type="submit"]{
-    padding: 10px 20px;
-    border: none;
-    background-color: #c0645a;
-    color: white;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-}
-form input[type="submit"]:hover{
-    background-color: #e0dddd;
-    color: #c0645a;
-}
-.icon img{
-    width: 100px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.temp{
-    font-size: 40px;
-    font-weight: 1000;
-    margin-top: 20px;
 
+body{
+  background-color: #222;
 }
-.desc{
-    font-size:  25px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 20px; 
+
+.card{
+  width: 90%;
+  max-width: 470px;
+  color: #fff;
+  background: linear-gradient(135deg ,#00feba , #5b548a);
+  margin: 100px auto 0;
+  padding: 40px 35px;
+  border-radius: 20px;
+  text-align: center;
 }
-.details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+
+.card h1{
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: -20px;
 }
-.details>div{
-    font-size: 15px;
-    background-color: white;
-    border-radius: 5px;
-    margin:10px;
-    padding-top: 10px;
-    min-height: 40px;
-    text-align: center;
-    align-items: center;
+
+.search{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
     flex: 1;
+    background-color: #ebfffc;
+    border-radius: 30px;
+    color: #555;
+    font-size: 18px;
+    height: 60px;
+    padding: 10px 25px;
+    margin-right: 16px;
+}
+.search button{
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+.search button img{
+  width: 20px;
+}
+
+.weather img{
+  margin-top: 15px ;
+  width: 170px;
+}
+.weather .temp{
+  font-size: 80px;
+  font-weight: 600;
+  margin-top: -20px;
+}
+
+.weather .city{
+  font-size: 40px;
+  font-weight: 400;
+  margin-top: -35px;
+}
+
+.details{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.details .col{
+  display: flex;
+  align-items: center;
+  text-align: left; 
+  gap: 10px;
+}
+
+.col img{
+  width: 40px;
+}
+
+.humidity , .wind{
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather{
+  display: none;
+}
+
+.error{
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgba(255, 0, 0, 0.692);
+  text-align: left;
+  font-weight: 600;
+  display: none;
 }
