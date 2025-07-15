@@ -1,31 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Weather App</h1>
-        <form action="#">
-            <input type="text" id="cityname" placeholder="Enter your city name">
-            <input type="submit" value="Get weather">
-        </form>
-        <div class="weather-data">
-            <div class="icon">
-                <!-- <img src="https://openweathermap.org/img/wn/01d.png" alt=""> -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="card">
+      <h1>Weather App</h1>
+      <div class="search">
+        <input
+          type="text"
+          placeholder="enter city name"
+          spellcheck="false"
+          class="search-input"
+        />
+        <button class="search-btn"><img src="search.png" /></button>
+      </div>
+      <div>
+        <p class="error">*Invalid city name</p>
+      </div>
+      <div class="weather">
+        <img src="clouds.png" class="weather-img" />
+        <h1 class="temp">22 °C</h1>
+        <h2 class="city">Lahore</h2>
+
+        <div class="details">
+          <div class="col">
+            <img src="humidity.png" />
+            <div>
+              <p class="humidity">50 %</p>
+              <p>Humidity</p>
             </div>
-            <div class="temp"></div>
-            <div class="desc"></div>
-            <div class="details">
-                <div></div>
-                <div></div>
-                <div></div>
+          </div>
+
+          <div class="col">
+            <img src="wind.png" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-   <script src="script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
+   
