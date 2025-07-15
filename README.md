@@ -47,4 +47,3 @@ A simple and responsive **Weather App** built using **HTML**, **CSS**, and **Jav
 - 🧠 JavaScript (Vanilla)  
 - ☁️ OpenWeatherMap API
 
-
